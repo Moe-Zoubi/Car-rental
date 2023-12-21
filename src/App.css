@@ -1,38 +1,473 @@
-.App {
+ul li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+
+
+.orange-text{
+  color: #ff4d30;
+}
+
+.indent{
+  margin-left: 15px;
+}
+
+.btn-orange{
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  transition: background 0.5s ease;
+}
+
+.btn-black{
+  background-color: black;
+  border: 2px solid black;
+  transition: background 0.5s ease;
+}
+
+.btn-orange:hover, .btn-black:hover{
+  background-color: white;
+  color: black;
+}
+
+.gray-highlight{
+  color: #706f7b;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+/* top section */
+.top-section h3,
+.top-section h2,
+.top-section p{
+  text-align: center;
+}
+.top-section h3{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.top-section h2{
+  font-size: 3.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-section p{
+  font-size: 1.2rem;
+  width: 40%;
+  margin: 1rem auto;
+  color: #706f7b;
+}
+
+
+@media screen and (max-width:800px) {
+  /* navbar */
+  .toggle-links{
+    display: contents !important;
+  }
+  .links-container{
+    display: none !important;
+  }
+  .login-btns{
+    display: none !important;
+  }
+  /* home page */
+  .intro-container img{
+    display: none;
+  }
+  .intro-container{
+    text-align: center;
+  }
+  .intro-btns{
+    justify-content: center;
+  }
+
+  /* vehicles */
+  .models-container{
+    flex-direction: column;
+    gap: 3rem !important;
+  }
+  .model-item{
+    width: 100%;
+  }
+  .car-list{
+    flex-direction: row !important;
+    gap: 0.2rem !important;
+  }
+  .car-list button{
+    font-size: 0.9rem !important;
+    padding: 0.5rem 0.5rem !important;
+    width: 16%;
+    border-radius: 0.3rem;
+  }
+
+  /* choose us banner */
+  .chooseUs-container{
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  .choose-item{
+    width: 100% !important;
+  }
+
+  /* client reviews */
+  .review-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .review-card{
+    width: 80% !important;
+  }
+
+  /* FAQ questions */
+  .question-container{
+    margin: 4rem 10% !important;
+  }
+
+  /* about */
+  .discussion-img{
+    display: none;
+  }
+  .about-company{
+    width: 100% !important;
+  }
+  .about-company h2, .about-company p{
+    text-align: center;
+  }
+
+  /* our team */
+  .team-container{
+    margin: 3rem auto !important ;
+  }
+
+  /* contact */
+  .contact-container{
+    flex-direction: column;
+  }
+  .contact-item{
+    width: 100% !important;
+  }
+
+  /* footer */
+  .footer{
+    padding: 0 2rem !important;
+  }
+  .footer-item p{
+    font-size: 0.8rem !important;
+  }
+  .footer-item input{
+    padding: 15px 25px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .footer-item button{
+      font-size: 1rem !important;
+      padding: 10px 46px !important;
+  }
+}
+
+/* Navbar */
+.navbar{
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.navbar p:hover, .navbar li:hover{
+  cursor: pointer;
+  color: #ff4d30;
+}
+
+.hide-mobile-nav{
+  display: none;
+}
+
+.show-mobile-nav{
+  position: fixed;
+  background-color: #f3f3f3;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+.close-nav{
+  margin: 0 1rem;
+  text-align: right;
+  font-size: 40px;
+}
+
+.mobile-links{
+  width: 100%;
+  margin: 40% auto;
+}
+
+.mobile-links p{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.mobile-links p:hover{
+  font-size: 32px;
+}
+
+.mobile-links a:hover{
+  color: #ff4d30;
+}
+
+.toggle-links{
+  display: none;
+}
+
+.navbar img{
+  max-width: 150px;
+}
+
+.links-container{
+  width: 50%;
+}
+
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.links a{
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.links a:hover{
+  color: #ff4d30;
+}
+
+.login-btns button{
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+
+.register-btn{
+  background-color: #ff4d30;
+  color: white;
+  transition: background 0.5s ease;
+}
+
+.signIn-btn{
+  background-color: transparent;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.register-btn:hover{
+  background-color: #ee472e;
+}
+
+.signIn-btn:hover{
+  color: #ff4d30;
+}
+
+/* trip banner */
+.trip-banner{
+  width: 80%;
+  margin: 6rem auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.trip-banner h3{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.trip-banner h2{
+  font-size: 3.2rem;
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trip-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.trip-item{
+  width: 30%;
+}
+
+.trip-item img{
+  height: 175px;
+}
+
+.trip-item h4{
+  font-size: 1.5rem;
+}
+
+.trip-item p{
+  font-size: 1.1rem;
+}
+
+/* reviews section */
+.reviews-section{
+  background-color: #f8f8f8;
+  padding: 1.5rem 0;
+}
+
+.review-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 5rem 15%;
+}
+
+.review-card{
+  width: 50%;
+  padding: 1.5rem 2.5rem;
+  margin: 0 2rem;
+  background-color: white;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.08);
+  border-radius: 0.3rem;
+}
+
+.review-comment{
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.client-info{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.client-name{
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.client-info p:nth-child(2){
+  margin: 0.4rem 0;
+  font-size: 1.2rem;
+}
+
+.client-info img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* Car header */
+.carheader{
+  background:url(./images/homepage/car-bg.png) center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.transparent-bg{
+  height: 40vh;
+  background-color: #f8f8f8;
+  opacity: 0.9;
+}
+
+.page-title{
+  margin: 4rem 10%;
+}
+
+.page-title h2{
+  font-size: 3.3rem;
+  margin-bottom: 0;
+}
+
+.page-title p{
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* call us banner */
+.call-us{
+  height: 150px;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  background-color: black;
   color: white;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.call-us span{
+  margin-left: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 8rem;
+}
+
+.footer-item{
+  width: 20%;
+}
+
+.footer-item h5{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.footer-item p{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.footer-contact{
+  margin-top: 2.5rem;
+}
+
+.footer-item input{
+  width: 70%;
+  padding: 15px 25px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 2px transparent;
+  border-radius: 0.3rem;
+  background-color: #ececec;
+}
+
+.footer-item button{
+    background-color: #ff4d30;
+    border: 2px solid #ff4d30;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.25);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px 100px;
+    margin-top: 0.5rem;
+    transition: background 0.5s ease;  
+}
+
+.footer-item button:hover{
+  background-color: white;
+  color: #ff4d30;
 }

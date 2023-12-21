@@ -1,0 +1,63 @@
+.about-container{
+    display: flex;
+    gap: 3rem;
+    margin: 5rem 20%;
+}
+
+.about-container img{
+    padding: 4.5rem 0;
+}
+
+.about-company{
+    width: 50%;
+}
+
+.about-company h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.about-company h2{
+    margin: 0;
+    font-size: 3.1rem;
+}
+
+.about-company p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #706f7b;
+}
+
+.company-stats{
+    margin-top: 4rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.stat-item{
+    width: 33%;
+}
+
+.stat-item img{
+    padding: 0 2.3rem;
+    margin: 0;
+}
+
+.stat-text{
+    display: flex;
+    gap: 0.5rem;
+    text-align: left;
+    margin-top: 0;
+}
+
+.stat-text p:nth-child(1){
+    font-weight: 700;
+    color: black;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.stat-text p:nth-child(2){
+    margin: auto;
+}
