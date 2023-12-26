@@ -88,6 +88,9 @@ a{
   .review-comment{
     font-size: 1.4rem !important;
   }
+  .review-card{
+    margin: 0 auto !important;
+  }
 }
 
 
@@ -114,6 +117,15 @@ a{
     text-align: center;
   }
   
+  /*footer*/
+  .footer{
+    flex-direction: column;
+  }
+  .footer-item{
+    width: 60% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:800px) {
@@ -173,6 +185,9 @@ a{
   .team-container{
     margin: 3rem auto !important ;
   }
+  .member-info{
+    margin: 0 auto;
+  }
 
   /* contact */
   .contact-container{
@@ -187,7 +202,7 @@ a{
     padding: 0 2rem !important;
   }
   .footer-item p{
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
   .footer-item input{
     padding: 15px 25px !important;
@@ -466,9 +481,9 @@ a{
 
 /* call us banner */
 .call-us{
-  height: 150px;
+  height: auto;
   margin-top: 2rem;
-  padding-top: 2.5rem;
+  padding: 1.5rem 0.5rem;
   background-color: black;
   color: white;
   text-align: center;

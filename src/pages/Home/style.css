@@ -407,7 +407,7 @@ table td {
 /* save big banner */
 .save-banner{
     background-color: #2d2d2d;
-    height: 150px;
+    height: auto;
     text-align: center;
     color: white    ;
     padding: 2.5rem;
