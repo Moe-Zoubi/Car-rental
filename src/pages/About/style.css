@@ -5,7 +5,7 @@
 }
 
 .about-container img{
-    padding: 4.5rem 0;
+    padding: 1rem 0;
 }
 
 .about-company{
@@ -19,7 +19,8 @@
 
 .about-company h2{
     margin: 0;
-    font-size: 3.1rem;
+    font-size: 2.7rem;
+    line-height: 1.2;
 }
 
 .about-company p{
@@ -31,7 +32,7 @@
 .company-stats{
     margin-top: 4rem;
     display: flex;
-    gap: 3rem;
+    justify-content: space-evenly;
     align-items: center;
 }
 

@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  font-size: 90%;
+}
+
 ul li{
   list-style-type: none;
 }
@@ -67,6 +72,49 @@ a{
   color: #706f7b;
 }
 
+@media screen and (max-width:450px){
+  .intro-btns{
+    flex-direction: column;
+  }
+  .intro-btns button{
+    width: 80%;
+  }
+
+  /* reviews */
+  
+  .client-name{
+    font-size: 1.1rem !important;
+  }
+  .review-comment{
+    font-size: 1.4rem !important;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .company-stats{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .stat-item{
+    width: 50% !important;
+  }
+
+  /*booking*/
+  .car-booking{
+    padding: 1rem 2rem !important;
+  }
+  .form-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  /*choose us banner*/
+  .options{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+}
 
 @media screen and (max-width:800px) {
   /* navbar */
@@ -90,25 +138,6 @@ a{
     justify-content: center;
   }
 
-  /* vehicles */
-  .models-container{
-    flex-direction: column;
-    gap: 3rem !important;
-  }
-  .model-item{
-    width: 100%;
-  }
-  .car-list{
-    flex-direction: row !important;
-    gap: 0.2rem !important;
-  }
-  .car-list button{
-    font-size: 0.9rem !important;
-    padding: 0.5rem 0.5rem !important;
-    width: 16%;
-    border-radius: 0.3rem;
-  }
-
   /* choose us banner */
   .chooseUs-container{
     flex-direction: column;
@@ -118,31 +147,28 @@ a{
     width: 100% !important;
   }
 
-  /* client reviews */
-  .review-container{
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .review-card{
-    width: 80% !important;
-  }
-
   /* FAQ questions */
   .question-container{
     margin: 4rem 10% !important;
   }
 
   /* about */
-  .discussion-img{
-    display: none;
+  .about-container{
+    flex-direction: column;
+    text-align: center !important;
   }
   .about-company{
     width: 100% !important;
   }
-  .about-company h2, .about-company p{
-    text-align: center;
-  }
 
+  .trip-container{
+    flex-direction: column;
+  }
+  .trip-item{
+    width: 70% !important;
+    margin: auto;
+  }
+  
   /* our team */
   .team-container{
     margin: 3rem auto !important ;
@@ -174,6 +200,41 @@ a{
   }
 }
 
+@media screen and (max-width:1000px) {
+  /* vehicles */
+  .models-container{
+    flex-direction: column;
+    gap: 3rem !important;
+  }
+  .model-item{
+    width: 100%;
+  }
+  .car-list{
+    gap: 0.2rem !important;
+  }
+  .car-list button{
+    font-size: 1.2rem !important;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+  .rent-btn{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  /* client reviews */
+  .review-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .review-card{
+    width: 80% !important;
+    height: auto;
+  }
+}
+
+
 /* Navbar */
 .navbar{
   width: 80%;
@@ -187,7 +248,7 @@ a{
 
 .navbar p:hover, .navbar li:hover{
   cursor: pointer;
-  color: #ff4d30;
+  color: #ff4d30;  
 }
 
 .hide-mobile-nav{

@@ -97,7 +97,7 @@ input.inputBox {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    width: 80%; /* Set the width of the form */
+    width: 80%; 
     margin: 0 auto;
   }
   
@@ -118,7 +118,7 @@ input.inputBox {
   }
   
   select, input.inputBox {
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Adjust the alpha (0.2) to control the border's opacity */
+    border: 1px solid rgba(0, 0, 0, 0.2); 
     font-size: 16px;
     padding: 5px 8px;
   }
@@ -129,13 +129,13 @@ input.inputBox {
 }
 
 .submit-btn {
-    background-color: #FF4500; /* Background color set to cyan */
-    color: white; /* Text color set to white */
-    padding: 12px 24px; /* Adjust padding to make the button larger */
-    border: none; /* Remove border */
-    font-size: 18px; /* Adjust font size as needed */
-    cursor: pointer; /* Add a pointer cursor on hover */
-    border-radius: 5px; /* Add rounded corners */
+    background-color: #FF4500; 
+    color: white; 
+    padding: 12px 24px; 
+    border: none; 
+    font-size: 18px; 
+    cursor: pointer; 
+    border-radius: 5px; 
     margin-top: 2rem;
     width: 100%;
     box-shadow: 0 10px 15px rgba(255,83,48,.35);
@@ -318,7 +318,7 @@ div:nth-child(6) input{
 .models-container{
     display: flex;
     align-items: center;
-    gap: 12rem;
+    gap: 2rem;
     margin-top: 5rem;
 }
 
@@ -369,15 +369,21 @@ div:nth-child(6) input{
 .rent-btn{
     margin-top: 1rem;
     background-color: #FF4500;
+    border: 2px solid #FF4500;
     font-weight: 700;
     font-size: 1.7rem;
     color: white;
     padding: 10px 35px;
-    border: none;
+    transition: background 0.5s ease;
+}
+
+.rent-btn:hover{
+    color: #FF4500;
+    background-color: white;
 }
 
 .model-item img{
-    width: 500px;
+    width: 100%;
     margin: 0 2rem;
 }
 
