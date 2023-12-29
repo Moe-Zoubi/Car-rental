@@ -8,9 +8,10 @@
 }
 
 .member-info{
-    width: 350px;
+    width: 300px;
     background-color: white;
     box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+    margin: auto;
 }
 
 .member-info img{
