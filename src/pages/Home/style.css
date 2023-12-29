@@ -151,10 +151,6 @@ input.inputBox {
 /* reservation modal */
 .reservation-modal{
     overflow-y: scroll;
-    height: 90vh;
-    width: 60%;
-    left: 20%;
-    top: 50px;
 }
 
 .active-modal{
@@ -237,21 +233,18 @@ input.inputBox {
     grid-column: 1 / span 2;
 }
 
-.details-container 
-div:nth-child(5) input,
-div:nth-child(6) input{
-    width: 95% !important;
-}
+
 
 .details-container  div input{
     background-color: #dbdbdb;
     border: none;
     color: #555;
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: 500;
     outline: none;
-    padding: 14px 15px;
-    width: 90%;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .details-container div label{

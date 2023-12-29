@@ -78,35 +78,35 @@ function PopUpForm({show, rentDetails, toggleShow}) {
                 <div className="details-container">
                     <div className='input-item'>
                         <label>First Name</label>
-                        <input type="text" onChange={handleChange}  name='firstName' placeholder="  Enter First Name here" />
+                        <input type="text" onChange={handleChange}  name='firstName' placeholder="First Name here" />
                     </div>
                     <div className='input-item'>
                         <label>Last Name</label>
-                        <input type="text" onChange={handleChange}  name='lastName' placeholder="  Enter Last Name here" />
+                        <input type="text" onChange={handleChange}  name='lastName' placeholder="Last Name here" />
                     </div>
                     <div className='input-item'>
                         <label>Phone Number</label>
-                        <input type="tel" onChange={handleChange}  name='phone' placeholder="  Enter your Phone Number here" />
+                        <input type="tel" onChange={handleChange}  name='phone' placeholder="Phone Number here" />
                     </div>
                     <div className='input-item'>
                         <label>Age</label>
-                        <input type="number" onChange={handleChange}  name='age' placeholder="  Enter your Age here" />
+                        <input type="number" onChange={handleChange}  name='age' placeholder="Age here" />
                     </div>
                     <div className='input-item'>
                         <label>Email</label>
-                        <input type="email"  onChange={handleChange}  name='email' placeholder="  Enter your Email here" />
+                        <input type="email"  onChange={handleChange}  name='email' placeholder="Email here" />
                     </div>
                     <div className='input-item'>
                         <label>Address</label>
-                        <input type="text"  onChange={handleChange}  name='address' placeholder="  Enter your Address here" />
+                        <input type="text"  onChange={handleChange}  name='address' placeholder="Address here" />
                     </div>
                     <div className='input-item'>
                         <label>City</label>
-                        <input type="text" onChange={handleChange}  name='city' placeholder="  Enter your City here" />
+                        <input type="text" onChange={handleChange}  name='city' placeholder="City here" />
                     </div>
                     <div className='input-item'>
                         <label>Zipcode</label>
-                        <input type="text" onChange={handleChange}  name='zipcode' placeholder="  Enter your Zipcode here" />
+                        <input type="text" onChange={handleChange}  name='zipcode' placeholder="Zipcode here" />
                     </div>
                 </div>
                 <div className='flex-btn'>
